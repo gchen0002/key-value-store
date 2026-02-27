@@ -9,7 +9,7 @@ class Server {
 public:
     explicit Server(int port, 
                     Store& store,
-                    size_t threads = std::thread::hardware_concurrency());
+                    size_t threads = std::thread::hardware_concurrency() > 0 ? std::thread::hardware_concurrency() : 4);
     void start();
     void run();
     ~Server();

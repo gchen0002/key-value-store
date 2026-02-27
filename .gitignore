@@ -14,9 +14,9 @@ lib/
 # Project specific
 AGENTS.md
 skills/
-config.ini
 *.log
 
+kv-store/
 # System
 .DS_Store
 Thumbs.db
