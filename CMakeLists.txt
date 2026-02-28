@@ -15,6 +15,7 @@ add_executable(kv_store
     src/response.cpp
     src/thread_pool.cpp
     src/socket.cpp
+    src/config.cpp
 )
 
 target_include_directories(kv_store PRIVATE
